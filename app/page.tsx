@@ -5,10 +5,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Navbar from "@/components/navbar"
 
+
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
+     
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white py-20 md:py-32">

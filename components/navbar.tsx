@@ -32,6 +32,12 @@ export default function Navbar() {
           >
             Navigate
           </Link>
+          <Link
+            href="/reports"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-blue-600"
+          >
+            Catch Reports
+          </Link>
         </nav>
         <div className="hidden md:flex gap-4">
           <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
@@ -74,6 +80,14 @@ export default function Navbar() {
           >
             <Map className="h-4 w-4" />
             Navigate
+          </Link>
+          <Link
+            href="/reports"
+            className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-blue-600"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <Map className="h-4 w-4" />
+            Catch Report
           </Link>
           <div className="flex flex-col gap-2 pt-2">
             <Button variant="outline" className="w-full border-blue-600 text-blue-600 hover:bg-blue-50">
