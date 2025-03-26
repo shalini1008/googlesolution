@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Grid, Info, MapPin, Wind } from "lucide-react";
 import Map from "@/components/map";
 import Navbar from "@/components/navbar";
+import FishPrediction from "@/components/Fishprediction";
 
 const Dashboard = () => {
     const features = [
@@ -11,7 +12,7 @@ const Dashboard = () => {
             title: "Fish Prediction",
             description: "Real-time predictions for fish availability based on environmental data. Our algorithms analyze ocean conditions, water temperature, and other factors to guide your fishing trips.",
             icon: <Grid className="w-6 h-6 text-blue-500" />,
-            component: null,
+            component: <FishPrediction/>
         },
         {
             title: "Territorial Alerts",

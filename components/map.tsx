@@ -26,7 +26,7 @@ const Map = () => {
 
   return (
     <div style={{ textAlign: "center", padding: "20px" ,background:"white"}}>
-      <h1>Get Your Current Location</h1>
+      <h1 className="text-1xl text-center font-bold text-blue-600 mt-4 mb-4">Get Your Current Location</h1>
       <button
         onClick={handleGetLocation}
         style={{

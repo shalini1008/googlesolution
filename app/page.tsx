@@ -37,11 +37,11 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="https://miro.medium.com/v2/resize:fit:900/1*hqPWf89EAU0_jj9Et69SGg.jpeg"
                   alt="FishSync App Interface"
-                  width={600}
-                  height={600}
-                  className="rounded-lg shadow-xl"
+                  width={700}
+                  height={700}
+                  className="rounded-sm shadow-xl"
                 />
               </div>
             </div>
