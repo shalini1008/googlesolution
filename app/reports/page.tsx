@@ -25,6 +25,10 @@ import {
 } from "recharts"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 import Navbar from "@/components/navbar"
+import ReportForm from "./ReportForm"; // Import modal component
+
+export default function ReportsPage() {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
 // Mock data for demonstration
 const catchData = [
@@ -132,6 +136,7 @@ export default function ReportsPage() {
               <p className="text-gray-500">Track and analyze your fishing data</p>
             </div>
             <div className="flex items-center gap-2">
+            
               <Button
                 variant="outline"
                 className="border-blue-200 text-blue-600"
@@ -150,6 +155,8 @@ export default function ReportsPage() {
                   </>
                 )}
               </Button>
+
+
               <Select defaultValue={timeframe} onValueChange={setTimeframe}>
                 <SelectTrigger className="w-[180px] border-blue-200">
                   <SelectValue placeholder="Select timeframe" />
