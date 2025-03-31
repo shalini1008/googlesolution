@@ -1,10 +1,10 @@
 "use client";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Grid, Info, MapPin, Wind } from "lucide-react";
 import Map from "@/components/map";
 import Navbar from "@/components/navbar";
-import FishPrediction from "@/components/Fishprediction";
+import FishPrediction from "@/components/fishPrediction";
+
 
 const Dashboard = () => {
     const features = [

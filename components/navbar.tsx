@@ -27,6 +27,12 @@ export default function Navbar() {
             Dashboard
           </Link>
           <Link
+            href="/fishprediction"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-blue-600"
+          >
+            FishPrediction
+          </Link>
+          <Link
             href="/navigate"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-blue-600"
           >
