@@ -25,10 +25,10 @@ import {
 } from "recharts"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 import Navbar from "@/components/navbar"
-import ReportForm from "./ReportForm"; // Import modal component
+// import ReportForm from "./ReportForm"; // Import modal component
 
-export default function ReportsPage() {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+// export default function ReportsPage() {
+//   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
 // Mock data for demonstration
 const catchData = [
