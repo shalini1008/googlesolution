@@ -13,7 +13,7 @@ export default function NewCatchReportPage() {
     <div className="flex min-h-screen flex-col">
         <Navbar />
       <div className="flex items-center mb-6">
-        <Link href="/catch-reports">
+        <Link href="/reports">
           <Button variant="ghost" size="sm" className="gap-1">
             <ChevronLeft className="h-4 w-4" />
             Back to Reports
