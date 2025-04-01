@@ -44,6 +44,12 @@ export default function Navbar() {
           >
             Catch Reports
           </Link>
+          <Link
+            href="/profile"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-blue-600"
+          >
+            Profile
+          </Link>
         </nav>
         <div className="hidden md:flex gap-4">
           <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
