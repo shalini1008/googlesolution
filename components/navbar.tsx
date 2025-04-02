@@ -27,6 +27,12 @@ export default function Navbar() {
             Dashboard
           </Link>
           <Link
+            href="/fishprediction"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-blue-600"
+          >
+            FishPrediction
+          </Link>
+          <Link
             href="/navigate"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-blue-600"
           >
@@ -37,6 +43,12 @@ export default function Navbar() {
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-blue-600"
           >
             Catch Reports
+          </Link>
+          <Link
+            href="/profile"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-blue-600"
+          >
+            Profile
           </Link>
         </nav>
         <div className="hidden md:flex gap-4">

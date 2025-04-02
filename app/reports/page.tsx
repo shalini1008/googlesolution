@@ -1,5 +1,6 @@
 "use client"
-
+import Link from "next/link"
+import { PlusCircle } from "lucide-react";
 import { useState } from "react"
 import { Calendar, Download, Filter, Fish, LineChart, Loader2, PieChart, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -25,6 +26,10 @@ import {
 } from "recharts"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 import Navbar from "@/components/navbar"
+// import ProfilePage from "@/components/ProfilePage";
+
+
+
 
 // Mock data for demonstration
 const catchData = [
@@ -115,11 +120,16 @@ const revenueData = [
 export default function ReportsPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [timeframe, setTimeframe] = useState("month")
+  const [showProfile, setShowProfile] = useState(false)
 
   const handleExport = () => {
     setIsLoading(true)
     setTimeout(() => setIsLoading(false), 1500)
   }
+
+  // function ProfilePage() {
+  //   return <div className="text-lg font-semibold">Profile Page Content</div>;
+  // }
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -131,7 +141,33 @@ export default function ReportsPage() {
               <h1 className="text-3xl font-bold tracking-tight text-blue-900">Catch Reports</h1>
               <p className="text-gray-500">Track and analyze your fishing data</p>
             </div>
+
+            {/* <div className="container mx-auto py-6">
+            {!showProfile ? (
+              <>
+                <div className="flex justify-between items-center">
+                  <h1 className="text-3xl font-bold">Reports</h1>
+                  <Button variant="default" onClick={() => setShowProfile(true)}>
+                    ADD REPORT
+                  </Button>
+                </div>
+                
+              </>
+            ) : (
+              <ProfilePage />
+            )}
+          // </div> */}
+
             <div className="flex items-center gap-2">
+            {/* <div className="flex gap-2"> */}
+          <Link href="/reports/new">
+            <Button className="gap-2">
+              <PlusCircle className="h-4 w-4" />
+              New Report
+            </Button>
+          </Link>
+
+            
               <Button
                 variant="outline"
                 className="border-blue-200 text-blue-600"
@@ -150,6 +186,8 @@ export default function ReportsPage() {
                   </>
                 )}
               </Button>
+
+
               <Select defaultValue={timeframe} onValueChange={setTimeframe}>
                 <SelectTrigger className="w-[180px] border-blue-200">
                   <SelectValue placeholder="Select timeframe" />
